@@ -176,7 +176,7 @@ frameN = customtkinter.CTkFrame(master=app, width=800)
 frameN.pack(fill="both",padx=20)
 
 
-nameLabel = customtkinter.CTkLabel(frameN, font=customtkinter.CTkFont(size=20, weight="bold"))
+nameLabel = customtkinter.CTkLabel(frameN, font=customtkinter.CTkFont(size=20, weight="bold"), text="No track selected")
 nameLabel.pack()
 
 
