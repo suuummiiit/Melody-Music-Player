@@ -139,9 +139,8 @@ def settrack():
         point = timeSlider.get()
         point = int(point)
         point+=1
-        print(point)
         timeSlider.set(point)
-        app.after(1000, settrack)
+    app.after(1000, settrack)
 
 
 
