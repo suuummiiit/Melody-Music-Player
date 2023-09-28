@@ -15,7 +15,7 @@ app.title("Melody Mucic Player")
 
 ##############################################################################################################################
 cDir = os.getcwd()
-folder_name = "songs"
+folder_name = "audios"
 folder = os.path.join(cDir, folder_name)
 
 songs = []
