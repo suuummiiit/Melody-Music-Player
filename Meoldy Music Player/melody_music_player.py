@@ -59,7 +59,6 @@ def play(path, st = 0):
     current_song = songs.index(path)
     playing = True
 
-
     # file = vlc.MediaPlayer(path)
     file = vlc.MediaPlayer()
     media = vlc.Media(path)
@@ -67,18 +66,16 @@ def play(path, st = 0):
     file.set_media(media)
     file.play()
 
-
-    # file.audio_set_volume(vol)
-    # file.play()
-
-
     time.sleep(0.1)
     trackLength = file.get_length()
     trackLength /= 1000
     trackLength = int(trackLength)
+
     timeSlider.configure(from_=0, to=trackLength, number_of_steps=trackLength, state="normal")
     timeSlider.set(st)
+
     volume_slider.configure(state="normal")
+
     photo =ImageTk.PhotoImage(Image.open(pPath+"\_playing.png").resize((ui_size,ui_size)))
     pl.configure(image=photo)
 
