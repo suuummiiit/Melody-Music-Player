@@ -1,3 +1,3 @@
 # Melody-Music-Player
-The songs folder is where the audio files will be saved
-Th ui folder contains the images for the buttons
+The songs folder contains the audio files.
+The ui folder contains the images for the buttons
